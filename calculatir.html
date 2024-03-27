@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(188, 196, 212);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+      }
+
+      .main {
+        height: 570px;
+        width: 330px;
+        background-color: rgb(29, 27, 27);
+        border-radius: 15px;
+        /* margin-right:500px ; */
+        z-index: 50px;
+      }
+      .screen {
+        height: 170px;
+        width: 100%;
+        box-shadow: 2px 1px 20px 6px white;
+      }
+      .screenin {
+        height: 200px;
+        width: 100%;
+        background-color: rgb(34, 31, 31);
+        color: rgb(6, 5, 5);
+        font-size: 30px;
+        text-align: end;
+        border-radius: 15px;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 26px;
+        gap: 18px;
+      }
+      button {
+        height: 60px;
+        width: 55px;
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: 600;
+      }
+      button:hover {
+        background-color: cadetblue;
+        transition: all 0.4s ease-in-out;
+      }
+      .screenin:hover {
+        background-color: rgb(187, 205, 210);
+        transition: all 0.6s ease-in-out;
+      }
+      @media  screen  and (max-width:600px){
+        .main{
+          height: 400px;
+          width: 250px;
+          position: relative;
+          bottom: 100px;
+
+        }
+        button{
+          height: 35px;
+          width: 70px;
+        }
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg" alt=""> -->
+
+    <div class="main">
+      <div class="screen">
+        <input type="text" class="screenin" />
+        <div class="btn">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>0</button>
+          <button>+</button>
+          <button>-</button>
+          <button>*</button>
+          <button>/</button>
+          <button>C</button>
+          <button>=</button>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
